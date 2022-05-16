@@ -1,0 +1,193 @@
+:root {
+  --darkMode-bg-color      : #343232;
+  --darkMode-text-color    : rgb(238, 227, 227);
+  --lightMode-bg-color     : rgb(213 208 208);
+  --lightMode-text-color   : rgb(17, 16, 16);
+  --bg-color               : rgb(213 208 208);
+  --text-color             : rgb(17, 16, 16);
+  --breakingBad-theme-color: #a58609;
+}
+
+html body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color       : var(--bg-color);
+  color                  : var(--text-color);
+  transition             : background-color 0.3s linear;
+}
+
+.pageSubtitle {
+  color:var(--breakingBad-theme-color);
+}
+
+html .ant-page-header-heading-title {
+  color: var(--breakingBad-theme-color);
+}
+
+html .ant-page-header-back-button {
+  color: var(--breakingBad-theme-color);
+}
+
+body h1 {
+  color: var(--breakingBad-theme-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+section {
+  display        : flex;
+  flex-wrap      : wrap;
+  margin         : 10px;
+  justify-content: space-around;
+}
+
+ul {
+  display   : flex;
+  list-style: none;
+}
+
+li {
+  padding: 15px;
+}
+
+.ant-spin-text {
+  font-size: 20px;
+}
+
+#spinnerContainer {
+  display        : flex;
+  width          : 100%;
+  justify-content: center;
+}
+
+button.ant-switch-checked {
+  background-color: #c9c9c9;
+}
+
+label {
+  font-weight: bold;
+  position   : relative;
+  top        : 2px;
+  left       : 5px;
+}
+
+header {
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  position        : sticky;
+  top             : 0px;
+  z-index         : 2;
+  background-color: var(--bg-color);
+  box-shadow      : 7px -4px 15px 5px grey;
+  transition      : background-color 0.3s linear;
+}
+
+#DarkModeWidget {
+  padding-right : 40px;
+  padding-bottom: 20px;
+}
+
+.navActive {
+  color      : var(--breakingBad-theme-color);
+  font-weight: bold;
+}
+
+.ant-card:not(:hover) {
+  transition: transform 0.2s linear;
+}
+
+.ant-card:hover {
+  transform : scale(1.1);
+  transition: transform 0.2s linear;
+}
+
+#charaterDetailContainer {
+  width         : 50%;
+  border        : solid 1px var(--breakingBad-theme-color);
+  padding-top   : 30px;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  margin        : auto;
+  box-shadow    : 4px -2px 15px 5px grey;
+}
+
+#characterDetailMain {
+  padding-bottom: 10px;
+}
+
+#charaterDetailContainer img {
+  width        : 80%;
+  box-shadow   : 7px -4px 15px 5px grey;
+  margin-bottom: 50px;
+}
+
+#charaterDetailContainer div {
+  text-align: center;
+}
+
+.about-info {
+  width     : 80%;
+  margin    : auto;
+  box-shadow: -2px 1px 20px 5px grey;
+  margin-top: 100px;
+}
+
+.about-info .container {
+  padding   : 5px;
+  text-align: center;
+}
+
+.about-info .info-text {
+  padding    : 10px;
+  font-weight: bold;
+}
+
+footer {
+  text-align    : center;
+  margin-top    : 20px;
+  padding-bottom: 20px;
+}
+
+.ant-list-items {
+  flex-direction: column;
+}
+
+html .ant-list-item-meta-description {
+  color: var(--text-color);
+}
+
+html .ant-list-item-meta-title h3 {
+  color: var(--text-color);
+}
+
+html .ant-btn-circle.ant-btn-lg {
+  min-width    : 60px;
+  min-height   : 60px;
+  border-radius: 50%;
+  position     : fixed;
+  right        : 0;
+  bottom       : 0;
+  margin-bottom: 70px;
+  margin-right : 70px;
+  border-width : 5px;
+  border-color : black;
+}
+
+
+#searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#searchContainer .ant-input-group-wrapper {
+width: 450px;
+}
